@@ -1,0 +1,27 @@
+<!-- login.html -->
+<form id="login-form">
+    <input type="email" id="email" name="email" required placeholder="Email">
+    <input type="password" id="password" name="password" required placeholder="Password">
+    <button type="submit">Login</button>
+  </form>
+  
+  <script>
+    document.getElementById('login-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const response = await fetch('/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password }),
+      });
+      const result = await response.json();
+      if (response.ok) {
+        alert('Login successful');
+        // Store the token securely, e.g., in localStorage or cookies
+        localStorage.setItem('token', result.token);
+      } else {
+        alert('Login failed');
+      }
+    });
+  </script>

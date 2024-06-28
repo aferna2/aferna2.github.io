@@ -1,0 +1,21 @@
+<!-- register.html -->
+<form id="register-form">
+    <input type="email" id="email" name="email" required placeholder="Email">
+    <input type="password" id="password" name="password" required placeholder="Password">
+    <button type="submit">Register</button>
+  </form>
+  
+  <script>
+    document.getElementById('register-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const response = await fetch('/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password }),
+      });
+      const result = await response.text();
+      alert(result);
+    });
+  </script>
