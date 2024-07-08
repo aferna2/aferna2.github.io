@@ -96,7 +96,7 @@ footer a:hover {
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%;
+    width: auto;
 }
 
 .carousel-control-prev-icon,
@@ -117,10 +117,4 @@ footer a:hover {
 
 .carousel-control-next-icon::before {
     content: '>'; /* Right arrow */
-}
-
-/* Style for the Google Sign-In button section */
-.google-signin-section {
-    margin-top: 20px;
-    text-align: center;
 }
