@@ -113,16 +113,14 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
+    font-size: 1rem;
     color: black;
 }
 
 .carousel-control-prev-icon::before {
     content: '<'; /* Left arrow */
-    font-size: 100%
 }
 
 .carousel-control-next-icon::before {
     content: '>'; /* Right arrow */
-    font-size: 100%
 }
