@@ -119,8 +119,10 @@ footer a:hover {
 
 .carousel-control-prev-icon::before {
     content: '<'; /* Left arrow */
+    font-size: 100%
 }
 
 .carousel-control-next-icon::before {
     content: '>'; /* Right arrow */
+    font-size: 100%
 }
