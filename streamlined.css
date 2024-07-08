@@ -89,6 +89,11 @@ footer a:hover {
     color: #ff6600;
 }
 
+.nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
 /* Custom carousel controls */
 .carousel-indicators{
     display: none;
@@ -96,7 +101,8 @@ footer a:hover {
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%;
+    width: auto;
+    position: absolute
 }
 
 .carousel-control-prev-icon,

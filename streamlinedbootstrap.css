@@ -4049,6 +4049,10 @@ textarea.form-control-lg {
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
+  -webkit-border-radius: var(--bs-navbar-toggler-border-radius);
+  -moz-border-radius: var(--bs-navbar-toggler-border-radius);
+  -ms-border-radius: var(--bs-navbar-toggler-border-radius);
+  -o-border-radius: var(--bs-navbar-toggler-border-radius);
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -6056,7 +6060,11 @@ textarea.form-control-lg {
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
-  }
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
 }
 
 .carousel-item.active,
