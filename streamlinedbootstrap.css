@@ -6028,7 +6028,7 @@ textarea.form-control-lg {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: auto;
   overflow: hidden;
 }
 .carousel-inner::after {
@@ -6041,8 +6041,7 @@ textarea.form-control-lg {
   position: relative;
   display: none;
   float: left;
-  width: 100%;
-  margin-right: -100%;
+  width: auto;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
@@ -6050,9 +6049,9 @@ textarea.form-control-lg {
   -moz-transition: transform 0.6s ease-in-out;
   -ms-transition: transform 0.6s ease-in-out;
   -o-transition: transform 0.6s ease-in-out;
-  padding-top: 100px;
-  padding-left:200px;
-  padding-right:200px;
+  padding-top: 10%;
+  padding-left:10%;
+  padding-right:10%;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {

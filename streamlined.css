@@ -96,14 +96,14 @@ footer a:hover {
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: auto;
+    width: 5%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
